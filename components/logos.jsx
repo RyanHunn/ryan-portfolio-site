@@ -19,7 +19,7 @@ function Logos() {
     <section id="clients" ref={ref}>
       <div className="wrap" style={{ paddingBottom:96 }}>
         <SectionHead num="04" title="My Clients" meta={<>Compelling stories, no matter the industry</>} />
-        <div className="reveal" style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:20 }}>
+        <div className="reveal logo-grid" style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:20 }}>
           {cells.map((c) => (
             <a
               key={c.id}

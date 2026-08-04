@@ -56,7 +56,7 @@ function Decks() {
       slides:['decks/cic-1-title.jpg','decks/cic-2.jpg','decks/cic-3.jpg','decks/cic-4.jpg','decks/cic-5.jpg'] },
   ];
   return (
-    <section id="decks" ref={ref} style={{ height:1550 }}>
+    <section id="decks" ref={ref}>
       <div className="wrap">
         <SectionHead num="01" title="Decks"
           meta={<>Story-Driven Slides for<br/>Seed, Series-A, Non-Profit</>} />
@@ -79,7 +79,7 @@ function Decks() {
         </div>
 
         {/* secondary decks */}
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:48 }}>
+        <div className="decks-grid" style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:48 }}>
           {secondary.map((d, i) => (
             <article key={d.key} className="reveal card-deck" style={{ transitionDelay:`${i * 80}ms` }}>
               <DeckCarousel deckKey={d.key} slides={d.slides} ratio="16 / 9" />

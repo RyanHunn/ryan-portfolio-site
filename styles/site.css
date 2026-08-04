@@ -153,3 +153,54 @@ image-slot {
 
 /* hide scrollbar chrome on horizontally-scrolling carousels (Chrome/Safari) */
 .hscroll::-webkit-scrollbar { display: none; }
+
+/* ---- nav: mobile menu ---- */
+.nav-mobile-panel { display: none; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 860px) {
+  .wrap { padding: 0 24px; }
+  .nav-inner { padding: 0 24px !important; }
+
+  .nav-links { display: none !important; }
+  .nav-burger { display: flex !important; }
+  .nav-mobile-panel { display: flex; }
+
+  .sec-head { flex-direction: column; align-items: flex-start; gap: 10px; padding-top: 74px; margin-bottom: 34px; }
+  .sec-num { font-size: 42px; }
+  .sec-title { font-size: clamp(34px, 9vw, 52px); }
+  .sec-meta { text-align: left; max-width: 100%; }
+
+  /* hero */
+  .hero-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+  .hero-art { height: 240px !important; }
+  .hero-type-stack span { margin-left: 0 !important; }
+
+  /* websites */
+  .web-row { grid-template-columns: 1fr !important; direction: ltr !important; gap: 22px !important; }
+
+  /* essays */
+  .essay-feature { grid-template-columns: 1fr !important; gap: 26px !important; }
+  .essay-row-grid { grid-template-columns: auto 1fr !important; row-gap: 6px !important; }
+  .essay-row-grid > .essay-meta { grid-column: 1 / -1; white-space: normal !important; }
+
+  /* decks */
+  .decks-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+
+  /* client logos */
+  .logo-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
+
+  /* testimonials */
+  .testi-head { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
+  .testi-head > div { text-align: left !important; max-width: 100% !important; }
+
+  /* contact */
+  .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .colophon { flex-direction: column; align-items: flex-start !important; gap: 8px; }
+}
+
+@media (max-width: 480px) {
+  .hero-name { white-space: normal !important; font-size: clamp(30px, 12vw, 60px) !important; }
+}

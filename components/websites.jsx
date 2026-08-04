@@ -34,7 +34,7 @@ function Websites() {
         <SectionHead num="02" title="Websites" meta={<>CAPTIVATING COPY FOR THE ONLINE ATTENTION SPAN</>} />
         <div style={{ display:'flex', flexDirection:'column', gap:80 }}>
           {items.map((it, i) => (
-            <div key={it.id} className="reveal" style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:54, alignItems:'center', direction: i%2 ? 'rtl' : 'ltr' }}>
+            <div key={it.id} className="reveal web-row" style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:54, alignItems:'center', direction: i%2 ? 'rtl' : 'ltr' }}>
               <div style={{ direction:'ltr' }}><Browser id={it.id} url={it.url} src={it.src} ratio={it.ratio} label={`SITE · ${it.m}`} /></div>
               <div style={{ direction:'ltr' }}>
                 <div style={{ fontFamily:'var(--deco)', fontSize:38, color:'var(--red)', lineHeight:1 }}>{String(i+1).padStart(2,'0')}</div>

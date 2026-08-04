@@ -46,14 +46,14 @@ function Hero() {
           Vienna · MMXXV
         </div>
         {/* name — one line, full width */}
-        <h1 className="reveal" style={{ fontFamily:'var(--deco)', lineHeight:0.9, margin:0, fontSize:'clamp(38px,9.4vw,150px)', letterSpacing:'0.005em', whiteSpace:'nowrap', color:'var(--ink)' }}>
+        <h1 className="reveal hero-name" style={{ fontFamily:'var(--deco)', lineHeight:0.9, margin:0, fontSize:'clamp(38px,9.4vw,150px)', letterSpacing:'0.005em', whiteSpace:'nowrap', color:'var(--ink)' }}>
           R.&nbsp;Hunneshagen
         </h1>
 
-        <div style={{ display:'grid', gridTemplateColumns:'1.5fr 1fr', gap:60, alignItems:'center', marginTop:38 }}>
+        <div className="hero-grid" style={{ display:'grid', gridTemplateColumns:'1.5fr 1fr', gap:60, alignItems:'center', marginTop:38 }}>
           {/* left — type */}
           <div>
-            <div className="reveal" style={{ display:'flex', gap:0, flexDirection:'column', fontFamily:'var(--deco)', fontSize:'clamp(28px,3.4vw,48px)', lineHeight:1.02 }}>
+            <div className="reveal hero-type-stack" style={{ display:'flex', gap:0, flexDirection:'column', fontFamily:'var(--deco)', fontSize:'clamp(28px,3.4vw,48px)', lineHeight:1.02 }}>
               <span style={{ color:'var(--rust)' }}>Copywriter.</span>
               <span style={{ color:'var(--sage)', marginLeft:'1.6em' }}>Strategist.</span>
               <span style={{ color:'var(--ochre)', marginLeft:'3.2em' }}>Essayist.</span>
@@ -68,7 +68,7 @@ function Hero() {
           </div>
 
           {/* right — art glass */}
-          <div className="reveal" style={{ height:'min(64vh, 520px)' }}>
+          <div className="reveal hero-art" style={{ height:'min(64vh, 520px)' }}>
             <ArtGlassTower />
           </div>
         </div>

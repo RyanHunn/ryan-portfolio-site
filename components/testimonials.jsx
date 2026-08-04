@@ -21,7 +21,7 @@ function Testimonials() {
     <section id="testimonials" ref={ref} style={{ background:'var(--rust)', color:'var(--ground-2)' }}>
       <div className="wrap" style={{ paddingTop:96, paddingBottom:96 }}>
         {/* custom header (cream on rust) */}
-        <div className="reveal" style={{ display:'flex', alignItems:'flex-end', gap:28, borderBottom:'2px solid var(--ground-2)', paddingBottom:22, marginBottom:64 }}>
+        <div className="reveal testi-head" style={{ display:'flex', alignItems:'flex-end', gap:28, borderBottom:'2px solid var(--ground-2)', paddingBottom:22, marginBottom:64 }}>
           <span style={{ fontFamily:'var(--deco)', fontSize:64, lineHeight:0.8, color:'var(--ground-2)' }}></span>
           <h2 style={{ fontFamily:'var(--deco)', fontSize:'clamp(44px,5vw,76px)', lineHeight:0.9, flex:1, color:'var(--ground-2)' }}>In Their Words <span style={{ color:'#f0d9b0' }}>✳</span></h2>
           <div style={{ fontFamily:'var(--sans)', fontSize:13, letterSpacing:'0.16em', textTransform:'uppercase', color:'#f0d9b0cc', textAlign:'right', maxWidth:260, paddingBottom:6, lineHeight:1.5 }}>COMMUNICATIVE, COLLABORATIVE, AND CREATIVE</div>

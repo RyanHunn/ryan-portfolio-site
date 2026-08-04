@@ -29,7 +29,7 @@ function Essays() {
         <SectionHead num="03" title="Essays" meta={<>the Things I get out of bed<br/>to write about</>} />
 
         {/* featured essay */}
-        <article className="reveal" style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:54, marginBottom:64, paddingBottom:54, borderBottom:'1px solid var(--line)' }}>
+        <article className="reveal essay-feature" style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:54, marginBottom:64, paddingBottom:54, borderBottom:'1px solid var(--line)' }}>
           <div>
             <div className="kicker" style={{ color:'var(--red)' }}>Latest <span className="star">✳</span></div>
             <h3 style={{ fontFamily:'var(--deco)', fontSize:'clamp(34px,3.6vw,52px)', lineHeight:0.95, margin:'14px 0 12px' }}>My Campari Safari</h3>
@@ -49,13 +49,13 @@ function Essays() {
         <div className="reveal">
           {list.map((e, i) => (
             <div key={i} onClick={() => setOpen(open === i ? null : i)} style={{ borderTop:'1px solid var(--line)', padding:'26px 0', cursor:'pointer', display:'block' }}>
-              <div style={{ display:'grid', gridTemplateColumns:'auto 1fr auto', gap:28, alignItems:'baseline' }}>
+              <div className="essay-row-grid" style={{ display:'grid', gridTemplateColumns:'auto 1fr auto', gap:28, alignItems:'baseline' }}>
                 <span style={{ fontFamily:'var(--deco)', fontSize:22, color:'var(--red)' }}>{String(i+1).padStart(2,'0')}</span>
                 <div>
                   <h4 style={{ fontFamily:'var(--deco)', fontSize:28, margin:0 }}>{e.t}</h4>
                   <div style={{ fontStyle:'italic', color:'var(--ink-soft)', marginTop:4 }}>{e.dek}</div>
                 </div>
-                <span style={{ fontFamily:'var(--sans)', fontSize:11, letterSpacing:'0.14em', textTransform:'uppercase', color:'var(--ink-soft)', whiteSpace:'nowrap' }}>{e.date} · {e.read}</span>
+                <span className="essay-meta" style={{ fontFamily:'var(--sans)', fontSize:11, letterSpacing:'0.14em', textTransform:'uppercase', color:'var(--ink-soft)', whiteSpace:'nowrap' }}>{e.date} · {e.read}</span>
               </div>
               <div style={{ maxHeight: open===i ? 360 : 0, overflow:'hidden', transition:'max-height .5s ease, opacity .4s', opacity: open===i?1:0 }}>
                 {(Array.isArray(e.body) ? e.body : [e.body]).map((p, pi) => (

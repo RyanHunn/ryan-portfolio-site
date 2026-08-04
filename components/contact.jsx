@@ -5,7 +5,7 @@ function Contact() {
     <footer id="contact" ref={ref} style={{ background:'var(--ground)' }}>
       <ArtGlass />
       <div className="wrap" style={{ paddingTop:96, paddingBottom:60 }}>
-        <div className="reveal" style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:60, alignItems:'start' }}>
+        <div className="reveal contact-grid" style={{ display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:60, alignItems:'start' }}>
           <div>
             <div className="kicker" style={{ color:'var(--red)', marginBottom:22 }}>inquire for current openings <span className="star">✳</span></div>
             <h2 style={{ fontFamily:'var(--deco)', fontSize:'clamp(52px,7vw,104px)', lineHeight:0.84, margin:0 }}>
@@ -41,7 +41,7 @@ function Contact() {
         </div>
 
         {/* colophon */}
-        <div style={{ display:'flex', justifyContent:'space-between', alignItems:'baseline', marginTop:80, paddingTop:24, borderTop:'1px solid var(--line)', fontFamily:'var(--sans)', fontSize:11, letterSpacing:'0.16em', textTransform:'uppercase', color:'var(--ink-soft)' }}>
+        <div className="colophon" style={{ display:'flex', justifyContent:'space-between', alignItems:'baseline', marginTop:80, paddingTop:24, borderTop:'1px solid var(--line)', fontFamily:'var(--sans)', fontSize:11, letterSpacing:'0.16em', textTransform:'uppercase', color:'var(--ink-soft)' }}>
           <span style={{ fontFamily:'var(--deco)', fontSize:20, letterSpacing:'0.02em', color:'var(--ink)' }}>R. Hunneshagen</span>
           <span>MIT LEIDENSCHAFT <span className="star">✳</span> VIENNA MMXXV</span>
           <span>© 2025 — ALL RIGHTSRESERVED</span>
