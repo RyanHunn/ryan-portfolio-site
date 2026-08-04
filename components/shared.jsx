@@ -34,7 +34,7 @@ function SectionHead({ num, title, meta }) {
   return (
     <div className="sec-head reveal">
       <span className="sec-num"></span>
-      <h2 className="sec-title">{title} <span className="star">✳</span></h2>
+      <h2 className="sec-title">{title} <span className="star">✳︎</span></h2>
       {meta && <div className="sec-meta">{meta}</div>}
     </div>
   );

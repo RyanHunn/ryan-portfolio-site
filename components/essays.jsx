@@ -31,7 +31,7 @@ function Essays() {
         {/* featured essay */}
         <article className="reveal essay-feature" style={{ display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:54, marginBottom:64, paddingBottom:54, borderBottom:'1px solid var(--line)' }}>
           <div>
-            <div className="kicker" style={{ color:'var(--red)' }}>Latest <span className="star">✳</span></div>
+            <div className="kicker" style={{ color:'var(--red)' }}>Latest <span className="star">✳︎</span></div>
             <h3 style={{ fontFamily:'var(--deco)', fontSize:'clamp(34px,3.6vw,52px)', lineHeight:0.95, margin:'14px 0 12px' }}>My Campari Safari</h3>
             <div style={{ fontStyle:'italic', color:'var(--ink-soft)', margin:'0 0 12px' }}>A tale of tipples, tariffs, and terrible bartending.</div>
             <div style={{ fontFamily:'var(--sans)', fontSize:11, letterSpacing:'0.18em', textTransform:'uppercase', color:'var(--ink-soft)' }}>May 2025 · 5 min read</div>

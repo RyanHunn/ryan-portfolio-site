@@ -40,7 +40,7 @@ function Logos() {
           ))}
         </div>
         <p className="reveal" style={{ fontFamily:'var(--sans)', fontSize:12, letterSpacing:'0.16em', textTransform:'uppercase', color:'var(--ink-soft)', textAlign:'center', marginTop:30 }}>
-          FINANCE <span className="star">✳</span> TECHNOLOGY <span className="star">✳</span> Media <span className="star">✳</span> Education <span className="star">✳</span> NON-PROFITS <span className="star">✳</span> Policy
+          FINANCE <span className="star">✳︎</span> TECHNOLOGY <span className="star">✳︎</span> Media <span className="star">✳︎</span> Education <span className="star">✳︎</span> NON-PROFITS <span className="star">✳︎</span> Policy
         </p>
       </div>
     </section>

@@ -67,7 +67,7 @@ function Decks() {
             <DeckCarousel deckKey="stratofied" slides={stratofiedSlides} ratio="16 / 9" />
           </div>
           <div style={{ maxWidth:720, margin:'0 auto', textAlign:'center' }}>
-            <div className="kicker" style={{ color:'var(--red)' }}>Featured <span className="star">✳</span></div>
+            <div className="kicker" style={{ color:'var(--red)' }}>Featured <span className="star">✳︎</span></div>
             <h3 style={{ fontFamily:'var(--deco)', fontSize:42, lineHeight:0.95, margin:'14px 0 6px' }}>Stratofied.</h3>
             <div style={{ fontFamily:'var(--sans)', fontSize:12, letterSpacing:'0.16em', textTransform:'uppercase', color:'var(--ink-soft)', marginBottom:18 }}></div>
             <p style={{ color:'var(--ink-soft)' }}>
