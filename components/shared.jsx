@@ -67,12 +67,14 @@ function ArtGlass({ flip }) {
 }
 
 // styled drop-target image placeholder
-function Slot({ id, ratio = '16 / 9', label, style = {} }) {
+function Slot({ id, ratio = '16 / 9', label, src, fit, style = {} }) {
   return (
     <image-slot
       id={id}
+      src={src}
+      fit={fit || 'cover'}
       placeholder={label || 'Drop image'}
-      style={{ display:'block', width:'100%', aspectRatio: ratio, ...style }}
+      style={{ display:'block', width:'100%', height:'auto', aspectRatio: ratio, ...style }}
     />
   );
 }
