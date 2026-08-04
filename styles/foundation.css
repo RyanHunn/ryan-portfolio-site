@@ -1,0 +1,74 @@
+/* ============================================================
+   RYAN — Portfolio foundation
+   Palette: warm dark / gold / terracotta / sage / cream
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+@font-face {
+  font-family: 'Decoment';
+  src: url('../fonts/Decoment-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Augsburger';
+  src: url('../fonts/AugsburgerSchriftCAT.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  /* Prairie School palette — warm, matte, earthy. No dark mode. */
+  --ground:   #e7ddc6;   /* warm oatmeal — primary page ground */
+  --ground-2: #f1e9d6;   /* lighter paper panel */
+  --ground-3: #ddd0b3;   /* deeper sand band */
+  --ink:      #2a2014;   /* warm dark brown — text */
+  --ink-soft: #5a4d3a;   /* secondary text */
+  --line:     #2a201420; /* hairline on ground */
+
+  --ochre:    #bd8a2c;   /* mustard ochre accent */
+  --ochre-lo: #9a6f1f;
+  --rust:     #9c4426;   /* terracotta / brick */
+  --rust-dk:  #7d351d;
+  --red:      #b5311f;   /* letterpress vermilion — second ink */
+  --sage:     #5b6b4a;   /* olive / prairie green */
+  --sage-dk:  #404d35;
+  --teal:     #356a6a;   /* Wright art-glass blue-green, used sparingly */
+
+  --serif: 'EB Garamond', Georgia, serif;
+  --sans:  'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --deco:  'Decoment', 'Jost', sans-serif;
+
+  --maxw: 1280px;
+}
+
+* { box-sizing: border-box; }
+
+/* shared atoms ------------------------------------------------ */
+.kicker {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.42em;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* thin double rule */
+.rule-double {
+  border: 0;
+  border-top: 1px solid currentColor;
+  position: relative;
+  opacity: 0.5;
+}
+.rule-double::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 3px;
+  border-top: 1px solid currentColor;
+}
+
+/* small diamond divider */
+.diamond {
+  width: 7px; height: 7px;
+  transform: rotate(45deg);
+  background: currentColor;
+  display: inline-block;
+}

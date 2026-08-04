@@ -1,0 +1,155 @@
+/* ============================================================
+   R. HUNNESHAGEN — site styles
+   Prairie School / Bauhaus / letterpress. Warm, matte, ink-on-paper.
+   ============================================================ */
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  /* subtle letterpress paper grain */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+::selection { background: var(--red); color: var(--ground-2); }
+
+h1,h2,h3 { font-weight: 400; margin: 0; }
+p { margin: 0 0 1em; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* ---- layout shell ---- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 56px; }
+section { position: relative; }
+
+/* ---- kicker / labels ---- */
+.kicker {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ---- section header (numbered, with asterisk + diagonal) ---- */
+.sec-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 28px;
+  padding-top: 110px;
+  margin-bottom: 54px;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 22px;
+}
+.sec-num {
+  font-family: var(--deco);
+  font-size: 64px;
+  line-height: 0.8;
+  color: var(--red);
+}
+.sec-title {
+  font-family: var(--deco);
+  font-size: clamp(44px, 5vw, 76px);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  flex: 1;
+}
+.sec-meta {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  max-width: 280px;
+  text-align: right;
+  line-height: 1.5;
+  padding-bottom: 6px;
+}
+
+/* asterisk / star mark */
+.star { color: var(--red); font-family: var(--sans); font-weight: 400; }
+
+/* ---- buttons / links ---- */
+.btn {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 26px;
+  border: 1.5px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .25s, color .25s, transform .25s;
+  text-decoration: none;
+}
+.btn:hover { background: var(--ink); color: var(--ground); }
+.btn-red { border-color: var(--red); color: var(--red); }
+.btn-red:hover { background: var(--red); color: var(--ground-2); }
+
+.txtlink {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--red);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+.txtlink:hover { color: var(--red); }
+
+/* ---- art-glass rectilinear divider (Wright-style) ---- */
+.artglass {
+  display: flex;
+  align-items: stretch;
+  height: 26px;
+  gap: 0;
+}
+.artglass i { display:block; height:100%; }
+
+/* ---- scroll reveal ---- */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---- image-slot styling to match ---- */
+image-slot {
+  --is-bg: #ddd0b3;
+  background: repeating-linear-gradient(45deg, #00000008 0 10px, transparent 10px 20px), var(--ground-3);
+  border: 1.5px solid var(--ink);
+  font-family: var(--sans) !important;
+  color: var(--ink-soft) !important;
+}
+
+/* diagonal accent line used across sections */
+.diag {
+  position: absolute;
+  background: var(--ink);
+  transform-origin: center;
+  pointer-events: none;
+}
+
+/* logo wall — no border/halo around individual tiles, tiles float on the grid gap */
+#clients image-slot {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+}
+
+/* hide scrollbar chrome on horizontally-scrolling carousels (Chrome/Safari) */
+.hscroll::-webkit-scrollbar { display: none; }

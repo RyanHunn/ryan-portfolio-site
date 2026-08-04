@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R. Hunneshagen — Strategist · Copywriter · Essayist</title>
+<link rel="stylesheet" href="styles/foundation.css">
+<link rel="stylesheet" href="styles/site.css">
+<style>
+  .nav-link:hover { border-bottom-color: var(--red) !important; color: var(--red) !important; }
+  .card-deck image-slot { transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s; }
+  .card-deck:hover image-slot { transform: translateY(-6px); box-shadow: -10px 12px 0 var(--rust); }
+  .card-deck h3 { transition: color .25s; }
+  .card-deck:hover h3 { color: var(--rust); }
+  .foot-soc { display:inline-block; transition: color .2s, transform .2s; }
+  .foot-soc:hover { color: var(--red) !important; transform: translateX(4px); }
+
+  /* RH monogram */
+  .monogram {
+    width:46px; height:46px; flex:none; position:relative;
+    border:1.7px solid var(--ink); background:var(--ground-2);
+    display:flex; align-items:center; justify-content:center;
+    transition: background .25s, border-radius .25s, transform .25s;
+  }
+  .mono-letters {
+    font-family: var(--deco); font-size:25px; line-height:1;
+    letter-spacing:-0.04em; color:var(--ink); transform:translateY(1px);
+  }
+  .mono-accent { position:absolute; top:-1.7px; right:-1.7px; width:10px; height:10px; background:var(--red); transition:background .25s; }
+  a:hover > .monogram { background: var(--ink); }
+  a:hover > .monogram .mono-letters { color: var(--ground-2); }
+  /* monogram shape variants (driven by Tweaks, set on <html>) */
+  .mono-circle .monogram { border-radius:50%; }
+  .mono-circle .mono-accent { display:none; }
+  .mono-outline .monogram { background:transparent; }
+  .mono-solid .monogram { background:var(--ink); }
+  .mono-solid .mono-letters { color:var(--ground-2); }
+  .mono-solid .mono-accent { background:var(--ochre); }
+
+  /* Tweak helpers */
+  .no-motion .reveal { opacity:1 !important; transform:none !important; transition:none !important; }
+  .no-diag .diag { display:none !important; }
+
+  @media (max-width: 1180px) {
+    .brand-word { display:none !important; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="image-slot.js"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="components/shared.jsx"></script>
+<script type="text/babel" src="components/tweaks.jsx"></script>
+<script type="text/babel" src="components/nav.jsx"></script>
+<script type="text/babel" src="components/hero.jsx"></script>
+<script type="text/babel" src="components/decks.jsx"></script>
+<script type="text/babel" src="components/websites.jsx"></script>
+<script type="text/babel" src="components/essays.jsx"></script>
+<script type="text/babel" src="components/logos.jsx"></script>
+<script type="text/babel" src="components/testimonials.jsx"></script>
+<script type="text/babel" src="components/contact.jsx"></script>
+
+<script type="text/babel">
+function App() {
+  return (
+    <React.Fragment>
+      <Nav />
+      <Hero />
+      <ArtGlass />
+      <Decks />
+      <Websites />
+      <Essays />
+      <Logos />
+      <Testimonials />
+      <Contact />
+      <Tweaks />
+    </React.Fragment>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
