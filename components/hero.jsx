@@ -34,9 +34,6 @@ function Hero() {
 
   return (
     <section id="top" ref={useReveal()} style={{ position:'relative', minHeight:'100vh', display:'flex', alignItems:'center', overflow:'hidden' }}>
-      {/* horizontal Prairie rules */}
-      <div className="hero-rule" style={{ position:'absolute', left:0, right:0, top:'24%', height:1, background:'var(--line)' }} />
-      <div className="hero-rule" style={{ position:'absolute', left:0, right:0, bottom:'18%', height:1, background:'var(--line)' }} />
       {/* red diagonal (letterpress) */}
       <div className="diag" style={{ top:'-10%', left:'58%', width:2, height:'130%', background:'var(--red)', transform:'rotate(18deg)' }} />
 

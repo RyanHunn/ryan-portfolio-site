@@ -174,7 +174,6 @@ image-slot {
   .sec-meta { text-align: left; max-width: 100%; }
 
   /* hero */
-  .hero-rule { display: none !important; }
   .hero-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
   .hero-art { height: 240px !important; }
   .hero-type-stack span { margin-left: 0 !important; }
