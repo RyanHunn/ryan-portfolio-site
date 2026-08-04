@@ -59,8 +59,8 @@ function Hero() {
               <span style={{ color:'var(--ochre)', marginLeft:'3.2em' }}>Essayist.</span>
             </div>
             <p className="reveal" style={{ fontFamily:'var(--serif)', fontSize:21, fontStyle:'italic', color:'var(--ink-soft)', maxWidth:460, marginTop:30 }}>
-              Let's find your voice and develop it to say exactly what you want,
-              clearly.
+              Let's find your unique voice and develop it to say exactly
+              what you want.
             </p>
             <div className="reveal" style={{ display:'flex', gap:16, marginTop:32 }}>
               <a href="#contact" className="btn btn-red">CONTACT RYAN</a>
