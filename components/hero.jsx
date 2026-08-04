@@ -43,7 +43,7 @@ function Hero() {
       <div className="wrap" style={{ width:'100%', paddingTop:96 }}>
         {/* kicker */}
         <div className="kicker reveal" style={{ color:'var(--rust)', marginBottom:22 }}>
-          Vienna · MMXV
+          Vienna · MMXXV
         </div>
         {/* name — one line, full width */}
         <h1 className="reveal" style={{ fontFamily:'var(--deco)', lineHeight:0.9, margin:0, fontSize:'clamp(38px,9.4vw,150px)', letterSpacing:'0.005em', whiteSpace:'nowrap', color:'var(--ink)' }}>
