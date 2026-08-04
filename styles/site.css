@@ -191,6 +191,7 @@ image-slot {
 
   /* client logos */
   .logo-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 10px !important; }
+  .logo-tile { padding: 12px !important; }
 
   /* testimonials */
   .testi-head { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }

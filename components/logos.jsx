@@ -23,6 +23,7 @@ function Logos() {
           {cells.map((c) => (
             <a
               key={c.id}
+              className={c.pad === 0 ? 'logo-tile logo-tile-flush' : 'logo-tile'}
               href={c.href}
               target="_blank"
               rel="noopener"
