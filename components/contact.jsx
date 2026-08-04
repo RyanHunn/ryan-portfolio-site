@@ -9,7 +9,7 @@ function Contact() {
           <div>
             <div className="kicker" style={{ color:'var(--red)', marginBottom:22 }}>inquire for current openings <span className="star">✳</span></div>
             <h2 style={{ fontFamily:'var(--deco)', fontSize:'clamp(52px,7vw,104px)', lineHeight:0.84, margin:0 }}>
-              Now let&rsquo;s write<br/>your story.
+              Let&rsquo;s find your unique voice<br/>and develop it to say<br/>exactly what you want.
             </h2>
             <p style={{ fontSize:20, fontStyle:'italic', color:'var(--ink-soft)', maxWidth:470, marginTop:26 }}>
               I can help you develop one high-value deliverable or an entire brand language. Contact me today to get started.
